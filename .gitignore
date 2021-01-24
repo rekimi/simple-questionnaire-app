@@ -36,3 +36,4 @@ lerna-debug.log*
 # file-storage-or-config
 db
 migration/*
+ormconfig.json

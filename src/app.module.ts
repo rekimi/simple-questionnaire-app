@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Connection } from 'typeorm';
 import { VenuesModule } from './venues/venues.module';
+import { QuestionsModule } from './questions/questions.module';
 
 @Module({
   //there is bug for sqlite when using ormconfig.json
@@ -17,7 +18,7 @@ import { VenuesModule } from './venues/venues.module';
     "migrationsDir": "migration",
   },
   "synchronize": false
-}), VenuesModule,
+}), VenuesModule, QuestionsModule,
 ],
   controllers: [AppController],
   providers: [AppService],

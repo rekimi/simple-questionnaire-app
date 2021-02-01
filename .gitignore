@@ -37,3 +37,6 @@ lerna-debug.log*
 db
 migration/*
 ormconfig.json
+
+#my files
+rest-client.rest
